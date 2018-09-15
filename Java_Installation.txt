@@ -1,0 +1,37 @@
+
+
+JAVA JDK Installation in the Linux/Ubuntu Systems.:
+Step 1:
+download the tar. file from the Oracle or Java Website 
+Upload to the server using the WINZIP to the home folder 
+
+using the command tar -xzvf <file name >.tar
+Step 2
+create the  DIR in server where you want to install 
+and copy the unzipped folder to installation  path 
+
+
+step 3: update Commands : setting the default JVM
+Use the below commands 
+ 
+update-alternatives --install /usr/bin/java java /opt/java/jdk1.8.0_05/bin/java 100
+
+update-alternatives --install /usr/bin/javac javac /opt/java/jdk1.8.0_05/bin/javac 100
+
+Verifying the installation :
+use the below commads:
+
+update-alternatives --display java
+
+update-alternatives --display javac
+
+
+To update Java, simply download an updated version from Oracle's website and extract it under the /opt/jdk directory, then set it up as the default JVM with a higher priority number (in this case 110):
+
+update-alternatives --install /usr/bin/java java /opt/jdk/jdk.new.version/bin/java 110
+update-alternatives --install /usr/bin/javac javac /opt/jdk/jdk.new.version/bin/javac 110
+
+
+to remove the old JAVA :
+update-alternatives --remove java /opt/jdk/jdk.old.version/bin/java
+update-alternatives --remove javac /opt/jdk/jdk.old.version/bin/javac
