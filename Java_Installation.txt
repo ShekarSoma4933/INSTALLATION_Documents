@@ -43,7 +43,7 @@ update-alternatives –install /usr/bin/javac javac /usr/lib/jvm/jdk1.8.0_181/bi
 update-alternatives –install /usr/bin/javaws javaws /usr/lib/jvm/jdk1.8.0_181/bin/javaws 1
 
 
-ort JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+exporort JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 export PATH="$PATH:$JAVA_HOME/bin"
 
 

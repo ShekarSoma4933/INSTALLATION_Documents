@@ -1,0 +1,3 @@
+it is a simple automation language that can perfectly describes an it infrastructure in ansible playbooks
+its an automation engine that runs ansible playbooks
+Ansible tower is Enterprise Framework for controlling securing  and managing ansible automation with UI and restful api
